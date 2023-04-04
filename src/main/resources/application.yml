@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ms-payment
+  profiles:
+    active:
+      - dev
+  config:
+    import: optional:configserver:http://localhost:9010
+
+  cloud:
+    config:
+      profile: dev
